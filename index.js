@@ -1,4 +1,4 @@
-function newTask(title, description) {
+const newTask = function(title, description) {
   const task = {
     title,
     description,
@@ -8,13 +8,13 @@ function newTask(title, description) {
       console.log(`${this.title} has${this.complete ? " " : " not "}been completed`);
     },
 
-    markCompleted: function(){
+    markCompleted: function() {
       this.complete = true;
     }
   };
 
   return task;
-}
+};
 
 // DRIVER CODE BELOW
 const task1 = newTask("Clean Cat Litter", "Take all the 💩 out of the litter box");
